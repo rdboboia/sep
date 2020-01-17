@@ -8,6 +8,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 import lombok.Data;
 import rdboboia.sep.data.components.Components;
 import rdboboia.sep.data.cubeblocks.CubeBlocks;
+import rdboboia.sep.data.cubeblocks.energy.CubeBlocksEnergy;
 
 @Data
 @XmlAccessorType(XmlAccessType.FIELD)
@@ -17,6 +18,10 @@ public class Definitions {
 	@XmlElement(name = "Components")
 	private Components components;
 
+//	@XmlElement(name = "CubeBlocks")
+//	private CubeBlocks cubeBlocks;
+	
 	@XmlElement(name = "CubeBlocks")
-	private CubeBlocks cubeBlocks;
+	private CubeBlocksEnergy cubeBlocksEnergy;
+	
 }

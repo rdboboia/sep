@@ -7,14 +7,16 @@
 //import rdboboia.sep.data.Definitions;
 //import rdboboia.sep.data.cubeblocks.Definition;
 //
-//public class AppCubeBlocks {
+//public class AppCubeBlocksEnergy {
 //	public static void main(String[] args) throws JAXBException {
 //		JAXBContext context = JAXBContext.newInstance(Definitions.class);
 //		Unmarshaller unmarshaller = context.createUnmarshaller();
-//		Definitions definitions = (Definitions) unmarshaller.unmarshal(FilePath.getCubeBlocksFile());
+//		Definitions definitions = (Definitions) unmarshaller.unmarshal(FilePath.getCubeBlocksEnergyFile());
 //
 //		for (Definition definition : definitions.getCubeBlocks().getDefinitionList()) {
 //			System.out.println(definition);
 //		}
+//		
+//		System.out.println(definitions);
 //	}
 //}
