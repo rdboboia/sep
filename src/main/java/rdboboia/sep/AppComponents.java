@@ -19,5 +19,7 @@ public class AppComponents {
 			System.out.println(component.getMass());
 			System.out.println("======");
 		}
+
+		System.out.println(definitions);
 	}
 }

@@ -1,41 +1,21 @@
 package rdboboia.sep.data.cubeblocks;
 
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlAttribute;
 
-public class SizeAttribute {
-	private String x;
-	private String y;
-	private String z;
+import lombok.Data;
 
-	public String getX() {
-		return x;
-	}
+@Data
+@XmlAccessorType(XmlAccessType.FIELD)
+public class SizeAttribute {
 
 	@XmlAttribute(name = "x")
-	public void setX(String x) {
-		this.x = x;
-	}
-
-	public String getY() {
-		return y;
-	}
+	private String x;
 
 	@XmlAttribute(name = "y")
-	public void setY(String y) {
-		this.y = y;
-	}
-
-	public String getZ() {
-		return z;
-	}
+	private String y;
 
 	@XmlAttribute(name = "z")
-	public void setZ(String z) {
-		this.z = z;
-	}
-
-	@Override
-	public String toString() {
-		return "SizeAttribute [x=" + x + ", y=" + y + ", z=" + z + "]";
-	}
+	private String z;
 }

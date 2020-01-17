@@ -1,32 +1,18 @@
 package rdboboia.sep.data.cubeblocks;
 
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlAttribute;
 
-public class ComponentAttribute {
-	private String subtype;
-	private String count;
+import lombok.Data;
 
-	public String getSubtype() {
-		return subtype;
-	}
+@Data
+@XmlAccessorType(XmlAccessType.FIELD)
+public class ComponentAttribute {
 
 	@XmlAttribute(name = "Subtype")
-	public void setSubtype(String subtype) {
-		this.subtype = subtype;
-	}
-
-	public String getCount() {
-		return count;
-	}
+	private String subtype;
 
 	@XmlAttribute(name = "Count")
-	public void setCount(String count) {
-		this.count = count;
-	}
-
-	@Override
-	public String toString() {
-		return "ComponentAttribute [subtype=" + subtype + ", count=" + count + "]";
-	}
-
+	private String count;
 }

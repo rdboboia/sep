@@ -1,31 +1,17 @@
 package rdboboia.sep.data.cubeblocks;
 
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlAttribute;
 
+import lombok.Data;
+
+@Data
+@XmlAccessorType(XmlAccessType.FIELD)
 public class CriticalComponent {
-	private String subtype;
-	private String index;
-
-	public String getSubtype() {
-		return subtype;
-	}
-
 	@XmlAttribute(name = "Subtype")
-	public void setSubtype(String subtype) {
-		this.subtype = subtype;
-	}
-
-	public String getIndex() {
-		return index;
-	}
+	private String subtype;
 
 	@XmlAttribute(name = "Index")
-	public void setIndex(String index) {
-		this.index = index;
-	}
-
-	@Override
-	public String toString() {
-		return "CriticalComponent [subtype=" + subtype + ", index=" + index + "]";
-	}
+	private String index;
 }

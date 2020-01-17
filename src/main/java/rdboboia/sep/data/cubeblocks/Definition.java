@@ -3,14 +3,12 @@ package rdboboia.sep.data.cubeblocks;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
 
 import lombok.Data;
 import rdboboia.sep.data.Id;
 
 @Data
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlRootElement(name = "Definition")
 public class Definition {
 
 	@XmlElement(name = "Id")

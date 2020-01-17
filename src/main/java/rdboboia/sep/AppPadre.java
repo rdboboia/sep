@@ -13,7 +13,7 @@ public class AppPadre {
 		JAXBContext context = JAXBContext.newInstance(Padre.class);
 		Unmarshaller unmarshaller = context.createUnmarshaller();
 		Padre definitions = (Padre) unmarshaller.unmarshal(f);
-		
+
 		System.out.println(definitions);
 	}
 }
